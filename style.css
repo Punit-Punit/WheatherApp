@@ -1,89 +1,45 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
+body {
     font-family: "Outfit", cursive;
     background-image: url("img.png");
     background-size: cover;
     background-position: top center;
   }
-  .page {
+  
+  .container {
+    border-radius: 8px;
     display: flex;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
     flex-direction: column;
     min-height: 100vh;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.6)
-    );
+    
   }
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 15px 15px;
-  }
-  header input {
-    width: 100%;
-    max-width: 280px;
-    padding: 10px 15px;
-    border: none;
-    outline: none;
-    background-color: rgba(18, 18, 18, 0.4);
-    border-radius: 16px;
-    border-bottom: 3px solid #df8e00;
   
-    font-size: 20px;
-    font-weight: 300;
-    transition: 0.2s ease-out;
-    color: #eeeeee;
-  }
-  header input:focus {
-    background-color: rgba(18, 18, 18, 0.8);
-  }
-  main {
-    flex: 1 1 100%;
-    padding: 25px 25px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  h1 {
     text-align: center;
   }
-  .location .city {
-    color: #eeeeee;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 5px;
-  }
-  .location .date {
-    color: #eeeeee;
-    font-size: 16px;
-  }
-  .current .hi-low {
-    color: #eeeeee;
-    font-size: 24px;
-    font-weight: 500;
-    text-shadow: 0 3px rgba(0, 0, 0, 0.4);
-  }
-  .current .temp {
-    color: #eeeeee;
-    font-size: 102px;
-    font-weight: 900;
-    margin: 30px 0;
-    text-shadow: 2px 8px rgba(0, 0, 0, 0.5);
-  }
-  .current .temp span {
-    font-weight: 200;
-  }
-  .current .weather {
-    color: #eeeeee;
-    font-size: 32px;
-    font-weight: 700;
-    font-style: italic;
-    margin-bottom: 15px;
-    text-shadow: 0 3px rgba(0, 0, 0, 0.4);
+  
+  input[type="text"] {
+    font-size: large;
+    opacity: 1.5;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
   }
   
+  button {
+    padding: 10px 10px;
+    width: 300px;
+    background-color: rgb(113, 208, 113);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
   
+  #weatherInfo {
+    margin-top: 20px;
+    padding: 10px;
+  }
